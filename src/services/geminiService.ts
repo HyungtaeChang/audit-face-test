@@ -10,7 +10,7 @@ export interface AnalysisResult {
 
 export async function analyzeFaceIntegrity(base64Image: string): Promise<AnalysisResult> {
   // API 키 확인
-  const apiKey = process.env.GEMINI_API_KEY;
+  const apiKey = "AIzaSyANjnRZHc1sk0ZUyNkebeOd2symqRKvf3c";
   if (!apiKey) {
     throw new Error("API 키가 설정되지 않았습니다. 관리자에게 문의하세요.");
   }
